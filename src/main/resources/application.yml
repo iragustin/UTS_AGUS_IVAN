@@ -1,0 +1,33 @@
+server:
+  port: 5432
+spring:
+  datasource:
+    url: jdbc:postgresql://ec2-34-192-210-139.compute-1.amazonaws.com:5432/d4kdjpb40i8fpl
+    username: jpeogciboccdgt
+    password: 0dd4a9724c7197a97dec0b905c9cab970cd222dafde32aab4d8d81a70c2b5ba9
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  messages:
+    basename: base
+  mail:
+    default-encoding: UTF-8
+    host: smtp.gmail.com
+    username: ivanwijayana217@gmail.com
+    password: drxdcpdrspwsqwmd
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+          connectiontimeout: 30000
+          timeout: 30000
+    protocol: smtp
+    test-connection: false
